@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding The Box Model</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <main>
+      <header>
+        <h1>Understanding The Css Box Models</h1>
+      </header>
+      <section class="article-container">
+          <h2>Let's Begin With The Basics</h2>
+          <p>Every Html Element is inside a rectangular box.</p>
+        
+          <h3 id="hello-world">Hello World</h3>            
+         
+          <p>Which means website is made up of little rectangular boxes.</p>
+          <img class="gif" src="https://media.giphy.com/media/2ikwIgNrmPZICNmRyX/source.gif" alt="animation of person adding a html Element."/>
+          <p>Understanding The Box Model concept is very helpful when designing a website with CSS.</p>
+      </section>
+
+      <section class="article-container">
+          <h2>What Is The Box Model ?</h2>
+          <p>The box model is a term used to describe the multiple boxes that wrap around a single Html element. </p>
+          <h4>The box model consists of:</h4>
+          <div class="box-model">
+            <div class="margin">
+                <div class="border">
+                <div class="padding">
+                    <div class="content"></div>
+                </div>
+                </div>
+          </div>
+          </div>
+          <ul>
+              <li>Margin - The content of the box, which include text and images. </li>
+              <li>Border -  A border that goes around the padding and content. </li>
+              <li>Padding - Clears an area around the content. The padding is transparent. </li>
+              <li>Content - The content of the box, where text and images appear. </li>
+          </ul>
+      </section>
+      <section class="article-container gameboard-container">
+          <div id="pop-up" class="pop-up-instructions ">
+              <h1>Play A Game To Understand The Box Model.</h1>
+              <h2>The object of the game is to visually understand how the margin, padding, and border impact the content of a website. </h2>
+              <img src="lmages/pablo-38.png" alt="game controller" class="image"/>
+              <button id="popUp-btn" class="play-btn">Play Game!</button>
+        </div>
+        <div class="box-model">
+            <div id="margin-box" class="margin-game gameboard-remove">
+                <div id="border-box" class="border-game gameboard-remove">
+                <div id="padding-box" class="padding-game gameboard-remove ">
+                    <div class="content-game "></div>
+                </div>
+                </div>
+          </div>
+          </div>
+          <div class="code-editor">
+            <h5>Css Code Example:</h5>
+            <p>.content {</p>
+        
+            <ul id="code-container">
+                <li>height: 100px</li>
+                <li >width: 100%</li>
+                <li id="margin-text" class="display-none">margin: 15px</li>
+                <li id="border-text" class="display-none">border: 30px solid white</li>
+                <li id="padding-text" class="display-none">padding: 15px</li>
+            </ul>
+            <p>}</p>
+          </div>
+          <div class="game-button-container">
+              <button class="game-btn" id="margin-btn">Add Margin</button>
+              <button class="game-btn" id="border-btn">Add Border</button>
+              <button class="game-btn" id="padding-btn">Add Padding</button>
+          </div>
+      </section>
+    </main>
+    <footer>
+        <p>Hector Hernandez &#169; 2020</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

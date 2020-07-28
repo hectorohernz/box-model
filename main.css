@@ -1,0 +1,576 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 0px 20px;
+    background: cornflowerblue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+header h1{
+   font-size: 25px;
+   font-weight: 700;
+   line-height: 2;
+   padding: 15px 0px;
+}
+
+.article-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    color: rgb(22, 49, 99);
+}
+.article-container h2{
+    font-size: 20px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.article-container h4{
+    font-size: 18px;
+    margin: 15px auto;
+    margin-bottom: 20px;
+}
+.article-container ul{
+    margin-bottom: 20px;
+}
+.article-container h5{
+    font-size: 18px;
+    margin: 12px auto;
+}
+#hello-world{
+    background: rgb(1, 33, 92); 
+    height: 100px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    letter-spacing:3px;
+    margin: 20px 0px;
+}
+.article-container p{
+   margin: 5px 0px;
+   padding-left: 5px;
+   line-height: 1.8;
+}
+.article-container ul{
+   padding-left: 24px;
+}
+.article-container li{
+    padding: 5px 0px;
+ }
+.code-snipit{
+    text-decoration: underline;
+    color: black;
+}
+.gif{
+    height: 200px;
+     margin: 20px 0px;
+}
+
+.margin{
+    padding: 35px;
+    height: 100%;
+    border: 1px solid black;
+    position: relative;
+    transition: all .25s ease-in-out;
+}
+
+.margin::before{
+    content: "Margin";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+
+.border{
+    padding: 30px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: palegoldenrod;
+    transition: all .25s ease-in-out;
+}
+
+.border::before{
+    content: "border";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+
+.padding{
+    padding:30px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(170, 238, 204);
+    transition: all .25s ease-in-out;
+}
+.padding::before{
+    content: "padding";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+.content{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(110, 105, 158);
+}
+.content::before{
+    content: "content";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.box-model{
+    margin: 40px 0px;
+}
+
+.gameboard-container{
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+.margin-game{
+    padding: 35px;
+    height: 100%;
+    border: 1px solid black;
+    background: white;
+    position: relative;
+    transition: all .25s ease-in-out;
+    
+}
+
+.margin-game::before{
+    content: "Margin";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+
+.border-game{
+    padding: 30px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    border: 1px solid black;
+    transition: all .25s ease-in-out;
+
+}
+
+.border-game::before{
+    content: "border";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+
+.padding-game{
+    padding:30px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid black;
+    background: white;
+    transition: all .25s ease-in-out;
+
+}
+.padding-game::before{
+    content: "padding";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+.content-game{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(110, 105, 158);
+    transition: all .25s ease-in-out;
+
+}
+.content-game::before{
+    content: "content";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gameboard-remove{
+ padding: 0px;
+}
+
+.game-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.game-btn{
+    height:30px ;
+    width: 50%;
+    margin: 15px 0px;
+}
+
+#margin-btn{
+    color: white;
+    background: rgb(34, 69, 122);
+    border: none;
+}
+
+#border-btn{
+    color: white;
+    background: rgb(35, 34, 122);
+    border: none;
+}
+
+#padding-btn{
+    color: white;
+    background: rgb(57, 34, 122);
+    border: none;
+}
+
+.pop-up-instructions{
+    z-index: 50;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   background: rgba(0, 0, 0, 0.836);
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding: 0px 15px ;
+   padding-top: 25px;
+   color: rgb(80, 150, 255);
+}
+
+.pop-up-instructions h2{
+    margin: 15px 0px;
+    font-weight: 300;
+    line-height: 35px;
+    color: rgb(255, 255, 255);    
+}
+
+.image{
+    height: 70px;
+    margin: 50px 0px;
+    opacity: .7;
+}
+.play-btn{
+    padding: 8px;
+    background:rgb(255, 255, 255) ;
+    border: none;
+    border-radius: 10px;
+}
+
+#code-container{
+    list-style: none;
+}
+#code-container li{
+    transition: all .25s ease-in-out;
+}
+.display-none{
+    display: none;
+}
+footer{
+    padding: 50px 0px ;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 500px) {
+    header h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 2;
+        padding: 15px 0px;
+     }
+
+    .article-container{
+        display: flex;
+       
+        flex-direction: column;
+        padding: 20px 20px;
+        color: rgb(22, 49, 99);
+    }
+    .article-container h2{
+        font-size: 30px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .article-container p{
+        margin: 5px 0px;
+        padding-left: 5px;
+        line-height: 1.8;
+        font-size: 20px;
+     }
+
+    .article-container h4{
+        font-size: 25px;
+        margin: 15px auto;
+        margin-bottom: 20px;
+    }
+
+
+    .article-container ul{
+        padding-left: 24px;
+        font-size: 20px;
+        list-style: none;
+    }
+
+     .article-container li{
+         padding: 5px 0px;
+    }
+
+    .gif{
+        height: 400px;
+       
+        text-align: center;
+    }
+
+.margin{
+    padding: 55px;
+    height: 100%;
+    border: 1px solid black;
+    position: relative;
+    transition: all .25s ease-in-out;
+}
+
+
+
+.border{
+    padding: 50px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: palegoldenrod;
+}
+
+.border::before{
+    content: "border";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+
+.padding{
+    padding:40px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(170, 238, 204);
+}
+.padding::before{
+    content: "padding";
+    position: absolute;
+    left: 0;
+    top: 1.8%;
+    width: 100%;
+    text-align: center;
+}
+.content{
+    color: rgb(255, 255, 255);
+    padding: 35px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(110, 105, 158);
+}
+.content::before{
+    content: "content";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.pop-up-instructions{
+    z-index: 50;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   background: rgba(0, 0, 0, 0.836);
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding: 0px 100px ;
+   padding-top: 25px;
+   color: rgb(80, 150, 255);
+}
+.pop-up-instructions h1{
+    font-size: 40px;
+
+}
+
+.pop-up-instructions h2{
+   font-size: 30px;
+   text-decoration: none;
+}
+
+.image{
+    height: 100px;
+    margin: 50px 0px;
+    opacity: .7;
+}
+.play-btn{
+    padding: 9px;
+    background:rgb(255, 255, 255) ;
+    border: none;
+    border-radius: 10px;
+}
+
+}
+
+
+@media only screen and (min-width: 800px) {
+    .article-container{
+       padding: 25px 100px ;
+    }
+    .gif{
+        height: 500px;
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header{
+        margin-bottom: 50px;
+    }
+    header h1{
+        font-size: 50px;
+     }
+     .article-container h2{
+        font-size: 35px;
+        margin: 0px auto;
+        margin-bottom: 50px;
+    }
+
+    .article-container p{
+        margin: 20px 0px;
+        padding-left: 5px;
+        line-height: 1.8;
+        font-size: 20px;
+     }
+
+    .article-container{
+       padding: 25px 100px ;
+    }
+    .gif{
+        width: 500px;
+        margin: auto;
+        margin-top:50px ;
+        margin-bottom:50px ;
+    }
+    .article-container ul{
+        padding-left: 24px;
+     }
+     .article-container li{
+         padding: 5px 0px;
+         font-size: 20px;
+    }
+    .pop-up-instructions h1{
+        font-size: 40px;
+
+    
+    }
+    
+    .pop-up-instructions h2{
+       font-size: 35px;
+       text-decoration: none;
+       line-height: 2;
+    }
+    
+    .image{
+        height: 120px;
+        margin: 50px 0px;
+        opacity: .7;
+    }
+    .play-btn{
+        padding: 15px;
+        background:rgb(255, 255, 255) ;
+        font-size: 15px;
+        border: none;
+        border-radius: 15px;
+    }
+    .game-button-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .game-btn{
+        margin: 15px;
+        height: 50px;
+        border-radius:5px ;
+        font-size: 20px;
+    }
+}
